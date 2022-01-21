@@ -21,9 +21,9 @@ const Footer = () => {
                 </div>
                 <div className="crypto__footer-links_div">
                     <h4>Get in touch</h4>
-                    <a href="#">basic-coder</a>
-                    <a href="#">8108054243</a>
-                    <a href='mailto:basiccoder01@gmail.com'>basiccoder01@gmail.com </a>
+                    <a href="#" rel="noreferrer">basic-coder</a>
+                    <a href="#" rel="noreferrer">8108054243</a>
+                    <a href='mailto:basiccoder01@gmail.com' rel="noreferrer">basiccoder01@gmail.com </a>
                 </div>
             </div>
             <div className="crypto__footer-copyright">

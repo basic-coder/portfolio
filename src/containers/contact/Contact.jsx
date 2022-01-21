@@ -79,9 +79,9 @@ const Contact = () => {
                         <div className="contact-info-item">
                             <h3>follow me</h3>
                             <div className="social-links">
-                                <a href="https://www.linkedin.com/in/bhavesh-sakpal-711770189/" target="_blank"><AiFillLinkedin /></a>
-                                <a href="https://github.com/basic-coder" target="_blank"><AiFillGithub /></a>
-                                <a href="https://www.instagram.com/basic_coder/" target="_blank"><AiFillInstagram /></a>
+                                <a href="https://www.linkedin.com/in/bhavesh-sakpal-711770189/" rel="noreferrer" target="_blank"><AiFillLinkedin /></a>
+                                <a href="https://github.com/basic-coder" rel="noreferrer" target="_blank"><AiFillGithub /></a>
+                                <a href="https://www.instagram.com/basic_coder/" rel="noreferrer" target="_blank"><AiFillInstagram /></a>
                             </div>
                         </div>
                     </div>
