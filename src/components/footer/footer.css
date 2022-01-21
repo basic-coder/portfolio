@@ -1,0 +1,111 @@
+.crypto__footer{
+    color:  var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: var(--white-alpha-25);
+    border: 1px solid (--white-alpha-40);
+    backdrop-filter: var(--backdrop-filter-blur);
+  }
+  .crypto__footer-heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .crypto__footer-heading h1{
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    text-align: center;
+    letter-spacing: -0.04em;
+  }
+  .crypto__footer-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: 1px solid #fff;
+    text-align: center;
+    margin-bottom: 10rem;
+    cursor: pointer;
+  }
+  .crypto__footer-heading p{
+    box-sizing: border-box;
+    font-size: 40px;
+    line-height: 21px;
+    color:  var(--text-color);
+    word-spacing: 2px;
+  }
+  .crypto__footer-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    text-align: left;
+  }
+  .crypto__footer-links div {
+    width: 250px;
+    margin: 1rem;
+  }
+  .crypto__footer-links_logo{
+    display: flex;
+    flex-direction: column;
+  }
+  .crypto__footer-links_logo img{
+    width: 118px;
+    height: 30px;
+    margin-bottom: 1rem;
+  }
+  .crypto__footer-links_logo p{
+    font-size: 12px;
+    line-height: 14px;
+    color:  var(--text-color);
+  }
+  .crypto__footer-links_div{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .crypto__footer-links_div h4{
+    font-size: 20px;
+    line-height: 16px;
+    margin-bottom: 1rem;
+  }
+  .crypto__footer-links_div a{
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 14px;
+    color:  var(--text-color);
+    margin: 0.5rem 0;
+    cursor: pointer;
+  }
+  .crypto__footer-links_div a:hover{
+    color: rgb(67, 165, 245);
+  }
+  .crypto__footer-links_div a .i{
+    margin-right: 10px;
+  }
+  .crypto__footer-copyright{
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+  }
+  .crypto__footer-copyright p{
+    font-size: 12px;
+    line-height: 14px;
+    color:  var(--text-color);
+    margin-bottom: 1rem;
+  }
+  @media screen and (max-width: 550px) {
+    .crypto__footer-links div{
+        margin: 1rem 0;
+    }
+    .crypto__footer-btn p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+  }
