@@ -15,8 +15,8 @@ const Card = ({title,image,des,frontend,backend,code,live}) => {
                         <h2>{title}</h2>
                         <p>{des}</p>
                         <div className='portfolio__buttons'>
-                            <a href={code}  target="_blank"><BiCodeAlt /><span>code</span></a>
-                            <a href={live}  target="_blank"><AiOutlineWifi/><span>live</span></a>
+                            <a href={code}  target="_blank" rel=noopener><BiCodeAlt /><span>code</span></a>
+                            <a href={live}  target="_blank" rel=noopener><AiOutlineWifi/><span>live</span></a>
                         </div>
                     </div>
                 </div>
