@@ -12,8 +12,8 @@ const cards = [
         des: 'Crypto is online crypto coins website, where you can get details of all crypto coins and you can transfer ethers using metamask. It is made using react and blockchain',
         frontend: 'React',
         backend: 'blockchain',
-        live: 'https://basic-coder.github.io/Crypto',
-        code: 'https://github.com/basic-coder/MaiMart',
+        live: 'https://mycrypto-mauve.vercel.app',
+        code: 'https://github.com/basic-coder/mycrypto',
     },
     {
         img: p2,
@@ -30,7 +30,7 @@ const cards = [
         des: 'A portfolio Website using React to share details about me, and my work',
         frontend: 'React',
         live: '#',
-        code: 'https://github.com/basic-coder/MaiMart',
+        code: 'https://github.com/basic-coder/portfolio',
     },
 ]
 
