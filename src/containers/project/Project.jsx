@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import './project.css'
-import p2 from '../../assets/p1-min.png'
+import p2 from '../../assets/p21.png'
 import p1 from '../../assets/p3-min.png'
-import p3 from '../../assets/p2-min.png'
+import p3 from '../../assets/p22.png'
 import Card from '../../components/card/Card'
 
 const cards = [
@@ -17,20 +17,20 @@ const cards = [
     },
     {
         img: p2,
-        head: 'MaiMart',
-        des: 'Maimart is an Ecommerce website which is made using MERN stack. It has a complete backend where you can add products, track order, sales etc',
+        head: 'Seo Master',
+        des: 'Seo Master is a website for sitemap checking. It is made to reduce the work of manual testers.This app is deployed on vercel',
         frontend: 'React',
-        backend: 'Nodejs, Mongodb',
-        live: 'https://mai-mart.herokuapp.com/',
-        code: 'https://github.com/basic-coder/MaiMart',
+        backend: 'Nodejs',
+        live: 'https://seo-master-client.vercel.app/',
+        code: 'https://github.com/basic-coder/seo-master-client',
     },
     {
         img: p3,
-        head: 'Portfolio',
-        des: 'A portfolio Website using React to share details about me, and my work',
+        head: 'Taxi Website',
+        des: 'Taxi Website was one of my current freelance work. It is completely UI related work.',
         frontend: 'React',
-        live: '#',
-        code: 'https://github.com/basic-coder/portfolio',
+        live: 'https://taxi-seven.vercel.app/',
+        code: '#',
     },
 ]
 

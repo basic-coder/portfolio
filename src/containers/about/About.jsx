@@ -77,6 +77,11 @@ export const About = () => {
                                 <h4>Web Developer - <span>Aero2Astro</span></h4>
                                 <p>Worked as a Web Developer for 6 months. During my internship I worked on laravel, CMS and UI.</p>
                             </div>
+                            <div className="timeline-item">
+                                <span className='date'>2022 - 2023</span>
+                                <h4>Frontend Developer - <span>Teknopoint/Dept</span></h4>
+                                <p>Currently working on <a href='https://ceat.com'>ceat.com</a> updating the pages, components.</p>
+                            </div>
                         </div>
                     </div>
                             )}
