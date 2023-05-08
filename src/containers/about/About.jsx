@@ -21,7 +21,7 @@ export const About = () => {
                     </div>
                 </div>
                 <div className="about-text">
-                    <p>Seeking a beginner role to enhance and explore my technical knowledge .</p>
+                    <p>exploring things to gain more knowledge .</p>
                     <h3>skills</h3>
                     <div className="skills">
                         <div className="skill-item">html</div>
