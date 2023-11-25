@@ -92,3 +92,11 @@
     background-color: coral;
     color:  #fff;
 }
+
+@media(max-width:767px){
+
+.portfolio__card {
+    margin: 0 auto;
+}
+
+}

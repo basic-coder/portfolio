@@ -125,12 +125,25 @@
     text-transform: capitalize;
     margin: 0 0 10px;
 }
+.about-text .timeline-item h4 a{
+    color: var(--main-color);
+}
 .about-text .timeline-item h4 span{
     font-weight: 400;
 }
 .about-text .btn{
     margin: 0 15px 15px 0;
 }
+
+.timeline-item ul{
+    list-style:circle;
+}
+
+.timeline-item ul span{
+   font-weight: 500;
+    color: var(--main-color);
+}
+
 @media (max-width:767px){
     .about-text,
     .about-img{

@@ -3,6 +3,10 @@
     width: 50%;
     padding: 0 15px;
 }
+
+.contact-form .row{
+    row-gap: 10px;
+}
 .contact-form .input-group{
     width: 100%;
     margin-bottom: 30px;

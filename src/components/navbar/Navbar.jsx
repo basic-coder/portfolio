@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./navbar.css";
 import {Link} from 'react-router-dom';
 import {BsFillSunFill,BsFillMoonFill} from 'react-icons/bs';
@@ -18,6 +18,11 @@ const Navbar = () => {
         setModeToggle(true)
     }
 
+    const toggleMenuFunc = (nav) => {
+      nav ? document.body.classList.add('no-scroll') : document.body.classList.remove('no-scroll')
+      setToggleMenu(nav)
+    }
+
   return (
     <div className="navbar">
       <div className="container">
@@ -35,7 +40,7 @@ const Navbar = () => {
               )
           }
           {!toggleMenu && (
-            <button type="button" onClick={()=> setToggleMenu(true)} className="nav-toggler">
+            <button type="button" onClick={() => toggleMenuFunc(true)} className="nav-toggler">
               <span></span>
             </button>
           ) }
@@ -43,27 +48,27 @@ const Navbar = () => {
         {toggleMenu && (
           <nav className="nav">
             <div className="nav-inner">
-            <button type="button" onClick={()=> setToggleMenu(false)} className="nav-toggler">
+            <button type="button" onClick={() => toggleMenuFunc(false)} className="nav-toggler">
               <span></span>
             </button>
               <ul>
                 <li>
-                  <Link to="/" onClick={()=> setToggleMenu(false)} className="nav-item">
+                  <Link to="/" onClick={() => toggleMenuFunc(false)} className="nav-item">
                     home
                   </Link>
                 </li>
                 <li>
-                  <Link to="/about" onClick={()=> setToggleMenu(false)} className="nav-item">
+                  <Link to="/about" onClick={() => toggleMenuFunc(false)} className="nav-item">
                     about
                   </Link>
                 </li>
                 <li>
-                  <Link to="/project" onClick={()=> setToggleMenu(false)} className="nav-item">
+                  <Link to="/project" onClick={() => toggleMenuFunc(false)} className="nav-item">
                     projects
                   </Link>
                 </li>
                 <li>
-                  <Link to="/contact" onClick={()=> setToggleMenu(false)} className="nav-item">
+                  <Link to="/contact" onClick={() => toggleMenuFunc(false)} className="nav-item">
                     contact
                   </Link>
                 </li>

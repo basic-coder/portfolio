@@ -166,6 +166,7 @@ img{
 .row{
   display: flex;
   flex-wrap: wrap;
+  row-gap: 40px;
 }
 .align-items-center{
   align-items: center;
@@ -246,6 +247,10 @@ button{
 }
 @media (max-width:575px){
   .section-title h2{
-    font-size: 35px;
+    font-size: 30px;
+  }
+
+  .container {
+    padding: 0 20px;
   }
 }

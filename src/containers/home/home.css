@@ -18,6 +18,7 @@
     font-weight: 300;
     margin: 0 0 30px ;
 }
+
 .home-text .btn{
     margin: 15px 15px 15px 0;
 }
@@ -48,6 +49,7 @@
     }
     .home-img .img-box{
         max-width: 300px;
+        margin-top: 50px;
     }
     .home-text .btn{
         margin: 15px 7px 15px;
@@ -55,8 +57,6 @@
 }
 @media(max-width:767px){
 
-}
-@media(max-width:575){
     .home-text h1{
         font-size: 30px;
     }

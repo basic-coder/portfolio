@@ -21,7 +21,7 @@ export const About = () => {
                     </div>
                 </div>
                 <div className="about-text">
-                    <p>exploring things to gain more knowledge .</p>
+                    <h3>Exploring things to gain more knowledge .</h3>
                     <h3>skills</h3>
                     <div className="skills">
                         <div className="skill-item">html</div>
@@ -35,41 +35,12 @@ export const About = () => {
                         <div className="skill-item">node</div>
                         <div className="skill-item">express</div>
                         <div className="skill-item">mongodb</div>
-                        <div className="skill-item">blockchain</div>
+                        {/* <div className="skill-item">blockchain</div> */}
                     </div>
                     <div className="about-tabs">
-                        {aboutTab ? (
-                            <>
-                            <button type='button' className='tab-item' onClick={()=>setAboutTab(false)} data-target="#education">education</button>
-                            <button type='button' className='tab-item active' onClick={()=>setAboutTab(true)} data-target="#experience">Experience</button>
-                            </>
-                        ) : (
-                            <>
-                            <button type='button' className='tab-item active' onClick={()=>setAboutTab(false)} data-target="#education">education</button>
-                            <button type='button' className='tab-item' onClick={()=>setAboutTab(true)} data-target="#experience">Experience</button>
-                            </>
-                        )
-                        }
+                        <button type='button' className='tab-item active' onClick={()=>setAboutTab(true)} data-target="#experience">Experience</button>                      
                     </div>
-                        {!aboutTab ? (
-                    <div className="tab-content" id='education'>
-                        <div className="timeline">
-                            <div className="timeline-item">
-                                <h4>Bachelor of Information technology (2019 - 2022) (9.5)</h4>
-                                <p>Shankar Narayan College of Arts, Science and Commerce</p>
-                            </div>
-                            <div className="timeline-item">
-                                <h4>HSC (2017 - 2019) (78%)</h4>
-                                <p>Shankar Narayan College of Arts, Science and Commerce</p>
-                            </div>
-                            <div className="timeline-item">
-                                <h4>SSC (2017) (68%)</h4>
-                                <p>St. Aloysuis English High School</p>
-                            </div>
-                        </div>
-                    </div>
-                        ):
-                            (
+                        
                     <div className="tab-content" id='experience'>
                         <div className="timeline">
                             <div className="timeline-item">
@@ -78,13 +49,31 @@ export const About = () => {
                                 <p>Worked as a Web Developer for 6 months. During my internship I worked on laravel, CMS and UI.</p>
                             </div>
                             <div className="timeline-item">
+                                <span className='date'>2021 - 2022</span>
+                                <h4>Frontend Developer - <span>Teknopoint/Dept</span></h4>
+                                <h4>Worked on latest <a href='https://ceat.com' target='_blank' rel="noreferrer">ceat.com</a></h4>
+                                <ul>
+                                    <li><span>Overview:</span>  Enhanced and maintained CEAT's official website.</li>
+                                    <li><span>Responsibilities:</span> Updated pages and components for a modern user experience.</li>
+                                    <li><span>Technologies:</span> Used HTML, CSS, JavaScript, and possibly other frontend tools.</li>
+                                    <li><span>Progress:</span> Improved aesthetics and user navigation.</li>
+                                </ul>
+                            </div>
+
+                            <div className="timeline-item">
                                 <span className='date'>2022 - 2023</span>
                                 <h4>Frontend Developer - <span>Teknopoint/Dept</span></h4>
-                                <p>Currently working on <a href='https://ceat.com'>ceat.com</a> updating the pages, components.</p>
-                            </div>
+                                <h4>Currently working on <a href='https://stage.ceatspecialty.com' target='_blank' rel="noreferrer">stage.ceatspecialty.com</a></h4>
+                                <ul>
+                                    <li><span>Overview:</span>  Updating pages and components for CEAT Specialty Tires.</li>
+                                     <li><span>Responsibilities:</span> Ongoing updates, collaborating with cross-functional teams.</li>   
+                                      <li><span>Technologies:</span> Using frontend technologies, possibly introducing new tools.</li>  
+                                      <li><span>Progress:</span> Testing phases completed, achieving key milestones.</li>  
+                                </ul>
+                      </div>
                         </div>
                     </div>
-                            )}
+                          
 
                     <Link to="/contact" className='btn'>Contact Me</Link>
                 </div>

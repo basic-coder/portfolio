@@ -29,8 +29,7 @@ const cards = [
         head: 'Taxi Website',
         des: 'Taxi Website was one of my current freelance work. It is completely UI related work.',
         frontend: 'React',
-        live: 'https://taxi-seven.vercel.app/',
-        code: '#',
+        live: 'https://whitecabs.ca/',
     },
 ]
 
@@ -42,13 +41,13 @@ const Project = () => {
            <div className="container">
                <div className="row">
                    <div className="section-title">
-                       <h2>Projects</h2>
+                       <h2>Personal / Freelance Projects</h2>
                    </div>
                </div>
                <div className="row">
                { cards.map((card)=>(
                 
-                   <Card key={card.head} close={()=>setCardToggle(false)} image={card.img} title={card.head} des={card.des} frontend={card.frontend} backend={card.backend} code={card.code} live={card.live} />
+                   <Card key={card.head} close={()=>setCardToggle(false)} image={card.img} title={card.head} des={card.des} frontend={card.frontend} backend={card.backend} code={card?.code} live={card.live} />
                    ))
                 }
                </div>
