@@ -51,7 +51,7 @@ export const About = () => {
                             <div className="timeline-item">
                                 <span className='date'>2021 - 2022</span>
                                 <h4>Frontend Developer - <span>Teknopoint/Dept</span></h4>
-                                <h4>Worked on latest <a href='https://ceat.com' target='_blank' rel="noreferrer">ceat.com</a></h4>
+                                <h4>Worked on <a href='https://ceat.com' target='_blank' rel="noreferrer">ceat.com</a></h4>
                                 <ul>
                                     <li><span>Overview:</span>  Enhanced and maintained CEAT's official website.</li>
                                     <li><span>Responsibilities:</span> Updated pages and components for a modern user experience.</li>
@@ -63,14 +63,27 @@ export const About = () => {
                             <div className="timeline-item">
                                 <span className='date'>2022 - 2023</span>
                                 <h4>Frontend Developer - <span>Teknopoint/Dept</span></h4>
-                                <h4>Currently working on <a href='https://stage.ceatspecialty.com' target='_blank' rel="noreferrer">stage.ceatspecialty.com</a></h4>
+                                <h4>Currently working on <a href='https:www.ceatspecialty.com' target='_blank' rel="noreferrer">ceatspecialty.com</a></h4>
                                 <ul>
                                     <li><span>Overview:</span>  Updating pages and components for CEAT Specialty Tires.</li>
                                      <li><span>Responsibilities:</span> Ongoing updates, collaborating with cross-functional teams.</li>   
                                       <li><span>Technologies:</span> Using frontend technologies, possibly introducing new tools.</li>  
                                       <li><span>Progress:</span> Testing phases completed, achieving key milestones.</li>  
                                 </ul>
-                      </div>
+                            </div>
+
+                            <div className="timeline-item">
+                                <span className='date'>2023 - 2024</span>
+                                <h4>Frontend Developer - <span>Teknopoint/Dept</span></h4>
+                                <h4>Currently working on <a href='https://www.birlaopus.com' target='_blank' rel="noreferrer">birlaopus.com</a></h4>
+                                <ul>
+                                    <li>Implementing new e-commerce features such as product recommendation systems and streamlined checkout processes.</li>
+                                    <li>Optimizing website performance to ensure fast loading times and smooth user experience.</li>
+                                    <li>Integrating third-party payment gateways and shipping solutions to enhance the purchasing process.</li>
+                                    <li>Collaborating with designers to create visually appealing product pages and user interfaces.</li>
+                                    <li>Analyzing user data and feedback to make iterative improvements to the platform.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                           
