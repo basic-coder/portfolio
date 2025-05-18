@@ -1,4 +1,3 @@
-import { FaHome } from "react-icons/fa";
 import Hero from "./components/Hero";
 import { FloatingNav } from "./components/ui/FloatingNav";
 import "./globals.css";

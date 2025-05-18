@@ -1,4 +1,5 @@
 // pages/api/contact.ts
+import { log } from 'console';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import nodemailer from 'nodemailer';
 
@@ -34,7 +35,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     });
 
     return res.status(200).json({ success: true });
-  } catch (err: any) {
+  } catch (err: string | any) {
+    console.error('Error sending email:', err);
     return res.status(500).json({ error: 'Failed to send email' });
   }
 }
