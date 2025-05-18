@@ -1,5 +1,6 @@
 // components/ContactUsForm.tsx
 'use client'
+import Image from 'next/image';
 import React, { useState } from 'react';
 
 interface FormData {
@@ -150,7 +151,13 @@ const ContactUsForm: React.FC = () => {
             </form>
             </div>
             <div className="w-full md:w-1/2">
-                <img src="./contact.svg" className='p-8 w-fit' alt="contact" />
+                <Image
+  src="/contact.svg"
+  alt="Contact"
+  width={400} // or any desired size
+  height={400}
+  className="p-8 w-fit"
+/>
             </div>
 
             {status && <p className="text-center mt-4">{status}</p>}

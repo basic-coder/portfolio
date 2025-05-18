@@ -2,16 +2,17 @@
 
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import { motion, AnimatePresence } from "motion/react";
-
-import { useEffect, useState } from "react";
+import Image from "next/image";
+import { useCallback, useEffect, useState } from "react";
 
 type Slider = {
-  id?: string | any;
-  title?: string | any;
-  des?: string | any;
-  img?: string | any;
-  link?:string| any;
+  id: string;
+  title: string;
+  des: string;
+  img: string;
+  link?: string;
 };
+
 export const Slider = ({
   Sliders,
   autoplay = false,
@@ -21,37 +22,34 @@ export const Slider = ({
 }) => {
   const [active, setActive] = useState(0);
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     setActive((prev) => (prev + 1) % Sliders.length);
-  };
+  }, [Sliders.length]);
 
   const handlePrev = () => {
     setActive((prev) => (prev - 1 + Sliders.length) % Sliders.length);
   };
 
-  const isActive = (index: number) => {
-    return index === active;
-  };
+  const isActive = (index: number) => index === active;
 
   useEffect(() => {
     if (autoplay) {
       const interval = setInterval(handleNext, 5000);
       return () => clearInterval(interval);
     }
-  }, [autoplay]);
+  }, [autoplay, handleNext]);
 
-  const randomRotateY = () => {
-    return Math.floor(Math.random() * 21) - 10;
-  };
+  const randomRotateY = () => Math.floor(Math.random() * 21) - 10;
+
   return (
     <div className="mx-auto max-w-sm px-4 py-20 font-sans antialiased md:max-w-4xl md:px-8 lg:px-12">
       <div className="relative grid grid-cols-1 gap-20 md:grid-cols-2">
         <div>
           <div className="relative h-80 w-full">
             <AnimatePresence>
-              {Sliders.map((Slider, index) => (
+              {Sliders.map((slider, index) => (
                 <motion.div
-                  key={Slider.img}
+                  key={slider.id}
                   initial={{
                     opacity: 0,
                     scale: 0.9,
@@ -63,9 +61,7 @@ export const Slider = ({
                     scale: isActive(index) ? 1 : 0.95,
                     z: isActive(index) ? 0 : -100,
                     rotate: isActive(index) ? 0 : randomRotateY(),
-                    zIndex: isActive(index)
-                      ? 40
-                      : Sliders.length + 2 - index,
+                    zIndex: isActive(index) ? 40 : Sliders.length + 2 - index,
                     y: isActive(index) ? [0, -80, 0] : 0,
                   }}
                   exit={{
@@ -80,13 +76,14 @@ export const Slider = ({
                   }}
                   className="absolute inset-0 origin-bottom"
                 >
-                  <img
-                    src={Slider.img}
-                    alt={Slider.title}
+                  <Image
+                    src={slider.img}
+                    alt={slider.title}
                     width={500}
                     height={500}
                     draggable={false}
                     className="h-full w-full rounded-3xl object-cover object-center"
+                    priority={isActive(index)} // Prioritize active image
                   />
                 </motion.div>
               ))}
@@ -118,7 +115,7 @@ export const Slider = ({
             </h3>
 
             <motion.p className="mt-8 text-lg text-gray-500 dark:text-neutral-300">
-              {Sliders[active].des.split(" ").map((word:string, index:number) => (
+              {Sliders[active].des.split(" ").map((word, index) => (
                 <motion.span
                   key={index}
                   initial={{
@@ -147,12 +144,14 @@ export const Slider = ({
             <button
               onClick={handlePrev}
               className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"
+              aria-label="Previous Slide"
             >
               <FiArrowLeft className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:rotate-12 dark:text-neutral-400" />
             </button>
             <button
               onClick={handleNext}
               className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"
+              aria-label="Next Slide"
             >
               <FiArrowRight className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:-rotate-12 dark:text-neutral-400" />
             </button>
