@@ -1,22 +1,17 @@
-// pages/api/contact.ts
-import { log } from 'console';
-import type { NextApiRequest, NextApiResponse } from 'next';
+// ✅ CORRECT App Router-style API route
+import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
-  }
-
-  const { name, email, message } = req.body;
+export async function POST(req: Request) {
+  const { name, email, message } = await req.json();
 
   if (!name || !email || !message) {
-    return res.status(400).json({ error: 'Missing required fields' });
+    return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
   }
 
   try {
     const transporter = nodemailer.createTransport({
-      service: 'gmail', // or use SMTP settings
+      service: 'gmail',
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
@@ -25,7 +20,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_USER, // your own email to receive the messages
+      to: process.env.EMAIL_USER,
       subject: `New Contact Form Submission from ${name}`,
       text: `
         Name: ${name}
@@ -34,9 +29,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       `,
     });
 
-    return res.status(200).json({ success: true });
-  } catch (err: string | any) {
-    console.error('Error sending email:', err);
-    return res.status(500).json({ error: 'Failed to send email' });
+    return NextResponse.json({ success: true });
+  } catch (error) {
+    console.error(error);
+    return NextResponse.json({ error: 'Failed to send email' }, { status: 500 });
   }
 }
