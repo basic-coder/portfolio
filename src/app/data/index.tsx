@@ -97,14 +97,14 @@ export const projects = [
   {
     id: "1",
     title: "Portfolio Website",
-    des: "Explore the wonders of our solor system with this captivating 3D simulation of the planets using Three.js",
+    des: "Portfolio website using Nextjs and aceternity ui",
     img: "/projects/portfolio.png",
     link: "/ui.earth.com"
   },
   {
     id: "2",
     title: "Portfolio Website",
-    des: "Explore the wonders of our solor system with this captivating 3D simulation of the planets using Three.js",
+    des: "Portfolio website using Nextjs and aceternity ui",
     img: "/projects/portfolio.png",
     link: "/ui.earth.com"
   },

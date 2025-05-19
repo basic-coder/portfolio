@@ -46,9 +46,9 @@ export const Slider = ({
       <div className="relative grid grid-cols-1 gap-20 md:grid-cols-2">
         <div>
           <div className="relative h-80 w-full">
-            <AnimatePresence>
+            <AnimatePresence >
               {Sliders.map((slider, index) => (
-                <motion.div
+                <motion.div 
                   key={slider.id}
                   initial={{
                     opacity: 0,
@@ -74,7 +74,7 @@ export const Slider = ({
                     duration: 0.4,
                     ease: "easeInOut",
                   }}
-                  className="absolute inset-0 origin-bottom"
+                  className="absolute inset-0 origin-bottom border border-white/[0.2] rounded-2xl "
                 >
                   <Image
                     src={slider.img}
@@ -82,7 +82,7 @@ export const Slider = ({
                     width={500}
                     height={500}
                     draggable={false}
-                    className="h-full w-full rounded-3xl object-cover object-center"
+                    className="h-full w-full rounded-3xl object-fill object-center"
                     priority={isActive(index)} // Prioritize active image
                   />
                 </motion.div>
@@ -114,7 +114,7 @@ export const Slider = ({
               {Sliders[active].title}
             </h3>
 
-            <motion.p className="mt-8 text-lg text-gray-500 dark:text-neutral-300">
+            <motion.p className="mt-8 text-lg text-gray-500 dark:text-neutral-300 ">
               {Sliders[active].des.split(" ").map((word, index) => (
                 <motion.span
                   key={index}
