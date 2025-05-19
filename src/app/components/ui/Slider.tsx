@@ -110,11 +110,11 @@ export const Slider = ({
               ease: "easeInOut",
             }}
           >
-            <h3 className="text-2xl font-bold text-black dark:text-white">
+            <h3 className="text-2xl font-bold text-white">
               {Sliders[active].title}
             </h3>
 
-            <motion.p className="mt-8 text-lg text-gray-500 dark:text-neutral-300 ">
+            <motion.p className="mt-8 text-lg text-neutral-300 ">
               {Sliders[active].des.split(" ").map((word, index) => (
                 <motion.span
                   key={index}
@@ -143,17 +143,17 @@ export const Slider = ({
           <div className="flex gap-4 pt-12 md:pt-0">
             <button
               onClick={handlePrev}
-              className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"
+              className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-neutral-800"
               aria-label="Previous Slide"
             >
-              <FiArrowLeft className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:rotate-12 dark:text-neutral-400" />
+              <FiArrowLeft className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:rotate-12 text-neutral-400" />
             </button>
             <button
               onClick={handleNext}
-              className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"
+              className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 bg-neutral-800"
               aria-label="Next Slide"
             >
-              <FiArrowRight className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:-rotate-12 dark:text-neutral-400" />
+              <FiArrowRight className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:-rotate-12 text-neutral-400" />
             </button>
           </div>
         </div>
