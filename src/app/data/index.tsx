@@ -116,7 +116,7 @@ export const experienceData = [
     title: "2024 – Present",
     content: (
       <div>
-        <p className="mb-8 text-sm md:text-lg lg-text-2xl font-normal text-neutral-800 dark:text-neutral-200">
+        <p className="mb-8 text-sm md:text-lg lg-text-2xl font-normal text-neutral-200">
           Working at TeknoPoint/DEPT as a Frontend Developer, contributing to multiple enterprise-grade e-commerce projects using React and Next.js.
         </p>
         <div className="grid grid-cols-2 gap-4">
@@ -156,7 +156,7 @@ export const experienceData = [
     title: "2023 (Freelance Projects)",
     content: (
       <div>
-        <p className="mb-8 text-sm md:text-lg lg-text-2xl font-normal text-neutral-800 dark:text-neutral-200">
+        <p className="mb-8 text-sm md:text-lg lg-text-2xl font-normal text-neutral-200">
           Completed multiple freelance projects for clients in Canada and India, focused on delivering performance-optimized, responsive websites using React and Tailwind CSS.
         </p>
         <div className="grid grid-cols-2 gap-4">
@@ -189,7 +189,7 @@ export const experienceData = [
     title: "2022 (Internship)",
     content: (
       <div>
-        <p className="mb-8 text-sm md:text-lg lg-text-2xl font-normal text-neutral-800 dark:text-neutral-200">
+        <p className="mb-8 text-sm md:text-lg lg-text-2xl font-normal text-neutral-200">
           Interned at Aero2Astro and worked on live client websites using Laravel, gaining full-stack exposure and experience in collaborative teams.
         </p>
       </div>

@@ -94,7 +94,7 @@ const handleSubmit = async (e: React.FormEvent) => {
 
     return (
         <div id='contact' className="contact-us-form space-y-8 z-10 relative max-w-7xl mx-auto  px-4 md:px-8 lg:px-10">
-            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-black dark:text-white max-w-4xl">
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-white max-w-4xl">
                 Fill free to Connect
             </h2>
             <div className="flex flex-col-reverse sm:flex-row">
