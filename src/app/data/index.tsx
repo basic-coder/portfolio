@@ -99,14 +99,14 @@ export const projects = [
     title: "Portfolio Website",
     des: "Portfolio website using Nextjs and aceternity ui",
     img: "/projects/portfolio.png",
-    link: "/ui.earth.com"
+    link: "#"
   },
   {
     id: "2",
-    title: "Portfolio Website",
-    des: "Portfolio website using Nextjs and aceternity ui",
-    img: "/projects/portfolio.png",
-    link: "/ui.earth.com"
+    title: "UI Library - Snapi Ui",
+    des: "UI Library using Nextjs ,shadcn and fumadocs ",
+    img: "/projects/snapiui.png",
+    link: "https://snapiui.vercel.app/"
   },
 ]
 

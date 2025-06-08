@@ -139,6 +139,10 @@ export const Slider = ({
                 </motion.span>
               ))}
             </motion.p>
+
+            <a href={Sliders[active].link} target="_blank" className="text-sm mt-5 font-bold text-black dark:text-white">
+              Project Link
+            </a>
           </motion.div>
           <div className="flex gap-4 pt-12 md:pt-0">
             <button
