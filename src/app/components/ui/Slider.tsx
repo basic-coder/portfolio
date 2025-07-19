@@ -76,6 +76,7 @@ export const Slider = ({
                   }}
                   className="absolute inset-0 origin-bottom border border-white/[0.2] rounded-2xl "
                 >
+                  <a href={Sliders[active].link} target="_blank">
                   <Image
                     src={slider.img}
                     alt={slider.title}
@@ -85,6 +86,7 @@ export const Slider = ({
                     className="h-full w-full rounded-3xl object-fill object-center"
                     priority={isActive(index)} // Prioritize active image
                   />
+                  </a>
                 </motion.div>
               ))}
             </AnimatePresence>

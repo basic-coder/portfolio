@@ -96,17 +96,24 @@ export const gridItems = [
 export const projects = [
   {
     id: "1",
-    title: "Portfolio Website",
-    des: "Portfolio website using Nextjs and aceternity ui",
-    img: "/projects/portfolio.png",
-    link: "#"
+    title: "Qizee - AI ",
+    des: "An AI-powered quiz generator app that allows users to build custom quizzes instantly. Built using Next.js, shadcn/ui, Prisma ORM, and PostgreSQL, with DeepSeek AI powering the quiz generation",
+    img: "/projects/quiz-generator.png",
+    link: "https://qizee.vercel.app/"
   },
   {
     id: "2",
     title: "UI Library - Snapi Ui",
-    des: "UI Library using Nextjs ,shadcn and fumadocs ",
+    des: "A custom UI library built with Next.js, FumaDocs, and Tailwind CSS. It features accessible, responsive, and themeable components for rapid development",
     img: "/projects/snapiui.png",
     link: "https://snapiui.vercel.app/"
+  },
+  {
+    id: "3",
+    title: "Portfolio Website",
+    des: "Portfolio website using Nextjs and aceternity ui",
+    img: "/projects/portfolio.png",
+    link: "#"
   },
 ]
 
@@ -117,7 +124,7 @@ export const experienceData = [
     content: (
       <div>
         <p className="mb-8 text-sm md:text-lg lg-text-2xl font-normal text-neutral-200">
-          Working at TeknoPoint/DEPT as a Frontend Developer, contributing to multiple enterprise-grade e-commerce projects using React and Next.js.
+          Working at TeknoPoint/DEPT as a Frontend Developer, contributing to multiple enterprise-grade e-commerce projects.
         </p>
         <div className="grid grid-cols-2 gap-4">
           <Image
