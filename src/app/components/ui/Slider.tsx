@@ -116,7 +116,7 @@ export const Slider = ({
               {Sliders[active].title}
             </h3>
 
-            <motion.p className="mt-8 text-lg text-neutral-300 ">
+            <motion.p className="mt-5 text-lg text-neutral-300 ">
               {Sliders[active].des.split(" ").map((word, index) => (
                 <motion.span
                   key={index}
@@ -142,9 +142,9 @@ export const Slider = ({
               ))}
             </motion.p>
 
-            <a href={Sliders[active].link} target="_blank" className="text-sm mt-5 font-bold text-black dark:text-white">
+            {/* <a href={Sliders[active].link} target="_blank" className="text-sm mt-5 font-bold text-black dark:text-white mb-6">
               Project Link
-            </a>
+            </a> */}
           </motion.div>
           <div className="flex gap-4 pt-12 md:pt-0">
             <button

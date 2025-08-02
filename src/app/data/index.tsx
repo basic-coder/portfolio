@@ -17,7 +17,7 @@ export const navItems = [
     link: '#experience',
     icon: <FaHistory className="inline mr-2" />
   },
-    {
+  {
     name: "Projects",
     link: '#projects',
     icon: <FaLaptopCode className="inline mr-2" />
@@ -97,9 +97,9 @@ export const projects = [
   {
     id: "1",
     title: "Qizee - AI ",
-    des: "An AI-powered quiz generator app that allows users to build custom quizzes instantly. Built using Next.js, shadcn/ui, Prisma ORM, and PostgreSQL, with DeepSeek AI powering the quiz generation",
+    des: "An AI-powered multiplayer quiz generator app that allows users to build custom quizzes instantly. Built using Next.js,Sockets,shadcn/ui, Prisma ORM, and PostgreSQL, with DeepSeek AI powering the quiz generation",
     img: "/projects/quiz-generator.png",
-    link: "https://qizee.vercel.app/"
+    link: "https://qizee-mutiplayer.onrender.com/"
   },
   {
     id: "2",
@@ -127,34 +127,42 @@ export const experienceData = [
           Working at TeknoPoint/DEPT as a Frontend Developer, contributing to multiple enterprise-grade e-commerce projects.
         </p>
         <div className="grid grid-cols-2 gap-4">
-          <Image
-            src="/experience/ceat.png"
-            alt="CEAT Project"
-            width={400}  // specify width
-            height={200} // specify height
-            className="rounded-lg object-cover md:h-44 lg:h-60"
-          />
-          <Image
-            src="/experience/vs.png"
-            alt="Vijay Sales"
-            width={400}
-            height={200}
-            className="rounded-lg object-cover md:h-44 lg:h-60"
-          />
-          <Image
-            src="/experience/ceatspecialty.png"
-            alt="CEAT Specialty"
-            width={400}
-            height={200}
-            className="rounded-lg object-cover md:h-44 lg:h-60"
-          />
-          <Image
-            src="/experience/birlaopus.png"
-            alt="Birla Opus"
-            width={400}
-            height={200}
-            className="rounded-lg object-cover md:h-44 lg:h-60"
-          />
+          <a href="https://www.ceat.com" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="/experience/ceat.png"
+              alt="CEAT Project"
+              width={400}  // specify width
+              height={200} // specify height
+              className="rounded-lg object-cover md:h-44 lg:h-60"
+            />
+          </a>
+          <a href="https://www.vijaysales.com" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="/experience/vs.png"
+              alt="Vijay Sales"
+              width={400}
+              height={200}
+              className="rounded-lg object-cover md:h-44 lg:h-60"
+            />
+          </a>
+          <a href="https://www.ceatspecialty.com" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="/experience/ceatspecialty.png"
+              alt="CEAT Specialty"
+              width={400}
+              height={200}
+              className="rounded-lg object-cover md:h-44 lg:h-60"
+            />
+          </a>
+          <a href="https://www.birlaopus.com" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="/experience/birlaopus.png"
+              alt="Birla Opus"
+              width={400}
+              height={200}
+              className="rounded-lg object-cover md:h-44 lg:h-60"
+            />
+          </a>
         </div>
       </div>
     ),
@@ -167,27 +175,33 @@ export const experienceData = [
           Completed multiple freelance projects for clients in Canada and India, focused on delivering performance-optimized, responsive websites using React and Tailwind CSS.
         </p>
         <div className="grid grid-cols-2 gap-4">
-          <Image
-            src="/experience/nimbusbytes.png"
-            alt="Nimbusbytes"
-            width={400}
-            height={200}
-            className="rounded-lg object-cover md:h-44 lg:h-60"
-          />
-          <Image
-            src="/experience/classic.png"
-            alt="Classic Safety"
-            width={400}
-            height={200}
-            className="rounded-lg object-cover md:h-44 lg:h-60"
-          />
-          <Image
-            src="/experience/whitecabs.png"
-            alt="WhiteCabs"
-            width={400}
-            height={200}
-            className="rounded-lg object-cover md:h-44 lg:h-60"
-          />
+          <a href="https://nimbusbytes.com" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="/experience/nimbusbytes.png"
+              alt="Nimbusbytes"
+              width={400}
+              height={200}
+              className="rounded-lg object-cover md:h-44 lg:h-60"
+            />
+          </a>
+          <a href="https://www.classicsafety.in" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="/experience/classic.png"
+              alt="Classic Safety"
+              width={400}
+              height={200}
+              className="rounded-lg object-cover md:h-44 lg:h-60"
+            />
+          </a>
+          <a href="https://whitecabs.ca" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="/experience/whitecabs.png"
+              alt="WhiteCabs"
+              width={400}
+              height={200}
+              className="rounded-lg object-cover md:h-44 lg:h-60"
+            />
+          </a>
         </div>
       </div>
     ),
