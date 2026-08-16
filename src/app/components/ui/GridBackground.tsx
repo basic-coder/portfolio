@@ -39,14 +39,14 @@ export function GridBackground(props: Props) {
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg-text-2xl">
             {props.subTitle}
           </p>
-          <a href="#projects">
+          {/* <a href="#projects">
             <BorderMagicButton
               title={props.buttonTitle}
               icon={props.buttonIcon}
               position={props.buttonPosition}
               otherClasses={props.otherClasses}
             />
-          </a>
+          </a> */}
 
           {/* GitHub & LinkedIn links */}
           <div className="flex gap-4 mt-6">

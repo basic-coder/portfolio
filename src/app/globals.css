@@ -73,3 +73,56 @@ body {
     }
   }
 }
+
+/* =========================================
+   Infinite Tech Stack Animation
+   ========================================= */
+
+.animate-tech-scroll {
+  --tech-gap-half: 0.375rem;
+  animation: tech-scroll 12s linear infinite;
+  will-change: transform;
+}
+
+.animate-tech-scroll-reverse {
+  --tech-gap-half: 0.375rem;
+  animation: tech-scroll-reverse 14s linear infinite;
+  will-change: transform;
+}
+
+@keyframes tech-scroll {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(-50% + var(--tech-gap-half)));
+  }
+}
+
+@keyframes tech-scroll-reverse {
+  from {
+    transform: translateY(calc(-50% + var(--tech-gap-half)));
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Desktop:
+   gap-8 = 2rem
+   Half gap = 1rem
+*/
+@media (min-width: 1024px) {
+  .animate-tech-scroll,
+  .animate-tech-scroll-reverse {
+    --tech-gap-half: 1rem;
+  }
+}
+
+/* Optional: pause when user hovers */
+.animate-tech-scroll:hover,
+.animate-tech-scroll-reverse:hover {
+  animation-play-state: paused;
+}

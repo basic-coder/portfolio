@@ -118,29 +118,54 @@ export const BentoGridItem = ({
             <Content title={title} description={description} />
           )}
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:right-2">
-              <div className="flex flex-col gap-3 lg:gap-8">
-                {["React.js", "Next.js", "TypeScript"].map((item) => (
+            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:right-2 overflow-hidden">
+
+              {/* Column 1 */}
+              <div className="flex flex-col gap-3 lg:gap-8 animate-tech-scroll">
+                {[
+                  "React.js",
+                  "Next.js",
+                  "TypeScript",
+                  "JavaScript",
+                  "AEM",
+                  "React.js",
+                  "Next.js",
+                  "TypeScript",
+                  "JavaScript",
+                  "AEM",
+                ].map((item, index) => (
                   <span
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]"
-                    key={item}
+                    key={`${item}-${index}`}
+                    className="shrink-0 py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]"
                   >
                     {item}
                   </span>
                 ))}
-                <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
               </div>
-              <div className="flex flex-col gap-3 lg:gap-8">
-                <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
-                {["Node", "Redux", "MongoDB"].map((item) => (
+
+              {/* Column 2 */}
+              <div className="flex flex-col gap-3 lg:gap-8 animate-tech-scroll-reverse">
+                {[
+                  "Node.js",
+                  "Redux",
+                  "GraphQL",
+                  "REST APIs",
+                  "MongoDB",
+                  "Node.js",
+                  "Redux",
+                  "GraphQL",
+                  "REST APIs",
+                  "MongoDB",
+                ].map((item, index) => (
                   <span
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]"
-                    key={item}
+                    key={`${item}-${index}`}
+                    className="shrink-0 py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]"
                   >
                     {item}
                   </span>
                 ))}
               </div>
+
             </div>
           )}
           {id === 6 && (

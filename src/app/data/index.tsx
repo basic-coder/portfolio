@@ -82,7 +82,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "I'm available for freelance or full-time opportunities — let’s connect.",
+    title: "I'm available for full-time opportunities — let’s connect.",
     description: "",
     className: "lg:col-span-1 md:col-span-3 md:row-span-1 p-0 max-h-[10rem] md:max-h-none",
     imgClassName: "",
@@ -120,11 +120,11 @@ export const projects = [
 
 export const experienceData = [
   {
-    title: "2024 – Present",
+    title: "2022 – Present",
     content: (
       <div>
         <p className="mb-8 text-sm md:text-lg lg-text-2xl font-normal text-neutral-200">
-          Working at TeknoPoint/DEPT as a Frontend Developer, contributing to multiple enterprise-grade e-commerce projects.
+          Working at DEPT as a Frontend Developer, contributing to multiple enterprise-grade e-commerce projects.
         </p>
         <div className="grid grid-cols-2 gap-4">
           <a href="https://www.ceat.com" target="_blank" rel="noopener noreferrer">
@@ -168,7 +168,7 @@ export const experienceData = [
     ),
   },
   {
-    title: "2023 (Freelance Projects)",
+    title: "2021 (Freelance Projects)",
     content: (
       <div>
         <p className="mb-8 text-sm md:text-lg lg-text-2xl font-normal text-neutral-200">
@@ -207,7 +207,7 @@ export const experienceData = [
     ),
   },
   {
-    title: "2022 (Internship)",
+    title: "2021 (Internship)",
     content: (
       <div>
         <p className="mb-8 text-sm md:text-lg lg-text-2xl font-normal text-neutral-200">
