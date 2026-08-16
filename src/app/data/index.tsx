@@ -1,6 +1,6 @@
 import {
   FaUser,
-  FaLaptopCode,    // More specific for projects
+  // FaLaptopCode,    // More specific for projects
   FaHistory,       // More specific for experience
   FaPaperPlane,    // More modern contact icon
 } from 'react-icons/fa';
