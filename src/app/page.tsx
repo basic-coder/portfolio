@@ -4,7 +4,7 @@ import "./globals.css";
 import Grid from "./components/Grid";
 import { navItems } from "./data";
 import { Experience } from "./components/Experience";
-import { Projects } from "./components/Projects";
+// import { Projects } from "./components/Projects";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 

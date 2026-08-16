@@ -1,7 +1,7 @@
 import { cn } from "../../../../lib/utils";
 import React from "react";
 import { TextGenerateEffect } from "./TextGenerationEffect";
-import BorderMagicButton from "./BorderMagicButton";
+// import BorderMagicButton from "./BorderMagicButton";
 import { FaGithub, FaLinkedin } from "react-icons/fa"; // <-- Added icons
 
 type Props = {
