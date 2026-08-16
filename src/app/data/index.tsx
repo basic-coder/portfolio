@@ -17,11 +17,11 @@ export const navItems = [
     link: '#experience',
     icon: <FaHistory className="inline mr-2" />
   },
-  {
-    name: "Projects",
-    link: '#projects',
-    icon: <FaLaptopCode className="inline mr-2" />
-  },
+  // {
+  //   name: "Projects",
+  //   link: '#projects',
+  //   icon: <FaLaptopCode className="inline mr-2" />
+  // },
   {
     name: "Contact",
     link: '#contact',
